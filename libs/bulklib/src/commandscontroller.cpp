@@ -4,6 +4,7 @@
 #include <consolebulkprinter.hpp>
 #include "filebulkprinter.hpp"
 #include "commandscontroller.hpp"
+#include "asyncbulkprinter.hpp"
 
 namespace bulk_defs {
 
@@ -16,12 +17,13 @@ namespace {
 CommandsController::CommandsController(std::size_t blockCommandsLimit):
     m_blockCommandsLimit {blockCommandsLimit}
 {
-    m_printers.push_back(std::make_unique<ConsoleBulkPrinter>());
-    m_printers.push_back(std::make_unique<FileBulkPrinter>());
+    m_printers.push_back(std::make_unique<AsyncBulkPrinter<ConsoleBulkPrinter>>());
+    m_printers.push_back(std::make_unique<AsyncBulkPrinter<FileBulkPrinter>>(2));
 }
 
 void CommandsController::addCommand(std::string &&strCommand)
 {
+    // std::cout << ">" << strCommand << std::endl;
     if (m_finished)
         return;
 

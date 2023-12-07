@@ -11,6 +11,7 @@ add_library(${PROJECT_NAME}
     src/bulkprinter.cpp
     include/consolebulkprinter.hpp
     include/filebulkprinter.hpp
+    src/asyncbulkprinter.hpp
 )
 
 if (${BUILD_TESTING})

@@ -2,6 +2,8 @@
 
 #include <memory>
 #include <fstream>
+#include <thread>
+#include <sstream>
 #include "bulkprinter.hpp"
 
 namespace bulk_defs {
@@ -18,10 +20,14 @@ public:
     /// @param bulk shared_ptr на блок команд
     void printBulk(std::shared_ptr<const Bulk> bulk) override final
     {
-        if (!m_ofs)
+        if (!m_ofs) {
+            std::ostringstream ss;
+            ss << std::this_thread::get_id();
+            const auto threadIdStr = ss.str();
             m_ofs = std::make_unique<std::ofstream>("bulk" 
                 + std::to_string(bulk->startPoint().time_since_epoch().count())
-                + ".log");
+                + "_" + threadIdStr + ".log");
+        }
 
         print(BulkPrinter::bulkToString(*bulk));
     }

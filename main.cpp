@@ -2,7 +2,7 @@
 #include <sstream>
 #include <thread>
 #include <utility>
-#include <commandscontroller.hpp>
+#include <async.h>
 #include <streamredirect.hpp>
 #include "version.h"
 
@@ -10,7 +10,7 @@
 
 int main(int argc, const char *argv[])
 {
-    std::cout << "Bulk version: " << PROJECT_VERSION << std::endl;
+    std::cout << "Async app version: " << PROJECT_VERSION << std::endl;
 
     const auto bulkSize = argc;
     if (bulkSize != 2) {
@@ -28,15 +28,13 @@ int main(int argc, const char *argv[])
     auto cinCmdProcessing = [bulkCommandsLimit]()
     {
         std::string strCommand;
-        bulk_defs::CommandsController cmdProc{static_cast<std::size_t>(bulkCommandsLimit)};
+        auto connectHandler = async::connect(static_cast<std::size_t>(bulkCommandsLimit));
 
-        while (!cmdProc.isFinished() && std::cin >> strCommand) {
-            // std::cout << strCommand << std::endl;
-            cmdProc.addCommand(std::exchange(strCommand, ""));
-            using namespace std::chrono_literals;
-            if (!cmdProc.isFinished())
-                std::this_thread::sleep_for(1s);
+        while (std::cin >> strCommand) {
+            async::receive(connectHandler, strCommand.c_str(), strCommand.size());
         }
+
+        async::disconnect(connectHandler);
     };
 
     // examples
@@ -82,10 +80,6 @@ int main(int argc, const char *argv[])
         cinCmdProcessing();
 
     }
-
-    std::cout << std::endl << "enter OEF to exit or enter the command:" << std::endl;
-
-    cinCmdProcessing();
 
     return 0;
 }
