@@ -9,7 +9,7 @@ class ConsolePrinter : public virtual IPrinter
 {
 public:
     /// @brief Функция печати строки на стандартный поток вывода
-    /// @param data 
+    /// @param data Данные для печати
     void print(const std::string &data) override final;
 };
 

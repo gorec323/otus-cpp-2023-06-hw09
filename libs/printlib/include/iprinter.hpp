@@ -11,7 +11,7 @@ struct IPrinter
     virtual ~IPrinter() = default;
 
     /// @brief ФУнкция вывода на печать строки
-    /// @param  
+    /// @param Строковые данные для вывода 
     virtual void print(const std::string &) = 0;
 };
 
