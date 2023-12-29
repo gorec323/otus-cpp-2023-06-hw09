@@ -6,7 +6,7 @@ namespace async {
 
 print_handler_t connect(std::size_t bulkLimit)
 {
-    return std::make_unique<bulk_defs::CommandsController>(bulkLimit).release();
+    return new bulk_defs::CommandsController(bulkLimit);
 }
 
 void receive(print_handler_t const handler, const char *const data, std::size_t dataSize)
