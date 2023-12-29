@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>async_cli: Исходный файл /home/runner/work/otus-cpp-2023-06-hw09/otus-cpp-2023-06-hw09/libs/bulklib/include/bulk.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">async_cli
+   &#160;<span id="projectnumber">0.0.4</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6719ab1f1f7655efc2fa43f7eb574fd1.html">libs</a></li><li class="navelem"><a class="el" href="dir_6563cb8320a36a04ae5ae1105bbcf212.html">bulklib</a></li><li class="navelem"><a class="el" href="dir_ee298634ae6bbaff1731c4e24a670a67.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">bulk.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="bulk_8hpp.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;chrono&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="namespacebulk__defs.html">    7</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebulk__defs.html">bulk_defs</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classbulk__defs_1_1Bulk.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbulk__defs_1_1Bulk.html">Bulk</a></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classbulk__defs_1_1Bulk.html#ad1abcaea25dca3c1e7e39350c1f6398f">Bulk</a>(std::string &amp;&amp;firstCommand, std::chrono::time_point&lt;std::chrono::system_clock&gt; &amp;&amp;<a class="code" href="classbulk__defs_1_1Bulk.html#a8d4e13e37062a1e54c15c1106b94904c">startPoint</a> =</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    std::chrono::system_clock::now());</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classbulk__defs_1_1Bulk.html#afaf6634c22098e26be8d5a9629d0707c">   21</a></span>&#160;    <a class="code" href="classbulk__defs_1_1Bulk.html#afaf6634c22098e26be8d5a9629d0707c">Bulk</a>(<a class="code" href="classbulk__defs_1_1Bulk.html">Bulk</a> &amp;&amp;) noexcept = default;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classbulk__defs_1_1Bulk.html#af5879cf9b2eeaddc63d3d7a7b97e0bff">   24</a></span>&#160;    ~<a class="code" href="classbulk__defs_1_1Bulk.html">Bulk</a>() = default;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    const std::vector&lt;std::<span class="keywordtype">string</span>&gt; &amp;<a class="code" href="classbulk__defs_1_1Bulk.html#a38d88fb653769b029a9c3812484192b4">commands</a>() const;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classbulk__defs_1_1Bulk.html#ac8f114fd4ef06ef0db9fb4d6085f3540">push</a>(std::<span class="keywordtype">string</span> &amp;&amp;command);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    const std::chrono::time_point&lt;std::chrono::system_clock&gt; &amp;<a class="code" href="classbulk__defs_1_1Bulk.html#a8d4e13e37062a1e54c15c1106b94904c">startPoint</a>() const;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;private:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    const std::chrono::time_point&lt;std::chrono::system_clock&gt; m_startPoint;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    std::vector&lt;std::<span class="keywordtype">string</span>&gt; m_commands;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="ttc" id="aclassbulk__defs_1_1Bulk_html"><div class="ttname"><a href="classbulk__defs_1_1Bulk.html">bulk_defs::Bulk</a></div><div class="ttdoc">Класс предназначен для хранения блока комманд и времени поступления первой команды</div><div class="ttdef"><b>Definition:</b> bulk.hpp:11</div></div>
+<div class="ttc" id="aclassbulk__defs_1_1Bulk_html_a38d88fb653769b029a9c3812484192b4"><div class="ttname"><a href="classbulk__defs_1_1Bulk.html#a38d88fb653769b029a9c3812484192b4">bulk_defs::Bulk::commands</a></div><div class="ttdeci">const std::vector&lt; std::string &gt; &amp; commands() const</div><div class="ttdef"><b>Definition:</b> bulk.cpp:10</div></div>
+<div class="ttc" id="aclassbulk__defs_1_1Bulk_html_a8d4e13e37062a1e54c15c1106b94904c"><div class="ttname"><a href="classbulk__defs_1_1Bulk.html#a8d4e13e37062a1e54c15c1106b94904c">bulk_defs::Bulk::startPoint</a></div><div class="ttdeci">const std::chrono::time_point&lt; std::chrono::system_clock &gt; &amp; startPoint() const</div><div class="ttdef"><b>Definition:</b> bulk.cpp:20</div></div>
+<div class="ttc" id="aclassbulk__defs_1_1Bulk_html_ac8f114fd4ef06ef0db9fb4d6085f3540"><div class="ttname"><a href="classbulk__defs_1_1Bulk.html#ac8f114fd4ef06ef0db9fb4d6085f3540">bulk_defs::Bulk::push</a></div><div class="ttdeci">void push(std::string &amp;&amp;command)</div><div class="ttdoc">Добавление новой команды в блок</div><div class="ttdef"><b>Definition:</b> bulk.cpp:15</div></div>
+<div class="ttc" id="aclassbulk__defs_1_1Bulk_html_ad1abcaea25dca3c1e7e39350c1f6398f"><div class="ttname"><a href="classbulk__defs_1_1Bulk.html#ad1abcaea25dca3c1e7e39350c1f6398f">bulk_defs::Bulk::Bulk</a></div><div class="ttdeci">Bulk(std::string &amp;&amp;firstCommand, std::chrono::time_point&lt; std::chrono::system_clock &gt; &amp;&amp;startPoint=std::chrono::system_clock::now())</div><div class="ttdoc">Конструктор</div><div class="ttdef"><b>Definition:</b> bulk.cpp:4</div></div>
+<div class="ttc" id="aclassbulk__defs_1_1Bulk_html_afaf6634c22098e26be8d5a9629d0707c"><div class="ttname"><a href="classbulk__defs_1_1Bulk.html#afaf6634c22098e26be8d5a9629d0707c">bulk_defs::Bulk::Bulk</a></div><div class="ttdeci">Bulk(Bulk &amp;&amp;) noexcept=default</div><div class="ttdoc">Конструктор перемещения</div></div>
+<div class="ttc" id="anamespacebulk__defs_html"><div class="ttname"><a href="namespacebulk__defs.html">bulk_defs</a></div><div class="ttdef"><b>Definition:</b> bulk.hpp:7</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

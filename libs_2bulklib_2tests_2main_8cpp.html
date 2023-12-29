@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>async_cli: Файл /home/runner/work/otus-cpp-2023-06-hw09/otus-cpp-2023-06-hw09/libs/bulklib/tests/main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">async_cli
+   &#160;<span id="projectnumber">0.0.4</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6719ab1f1f7655efc2fa43f7eb574fd1.html">libs</a></li><li class="navelem"><a class="el" href="dir_6563cb8320a36a04ae5ae1105bbcf212.html">bulklib</a></li><li class="navelem"><a class="el" href="dir_68a6366e22385cc004b054086707f3ca.html">tests</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл main.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;gtest/gtest.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="commandscontroller_8hpp_source.html">commandscontroller.hpp</a>&gt;</code><br />
+<code>#include &lt;thread&gt;</code><br />
+<code>#include &lt;<a class="el" href="bulk_8hpp_source.html">bulk.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="streamredirect_8hpp_source.html">streamredirect.hpp</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для main.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="libs_2bulklib_2tests_2main_8cpp__incl.png" border="0" usemap="#a_2home_2runner_2work_2otus-cpp-2023-06-hw09_2otus-cpp-2023-06-hw09_2libs_2bulklib_2tests_2main_8cpp" alt=""/></div>
+<map name="a_2home_2runner_2work_2otus-cpp-2023-06-hw09_2otus-cpp-2023-06-hw09_2libs_2bulklib_2tests_2main_8cpp" id="a_2home_2runner_2work_2otus-cpp-2023-06-hw09_2otus-cpp-2023-06-hw09_2libs_2bulklib_2tests_2main_8cpp">
+<area shape="rect" title=" " alt="" coords="265,5,445,76"/>
+<area shape="rect" title=" " alt="" coords="5,124,109,151"/>
+<area shape="rect" href="commandscontroller_8hpp.html" title=" " alt="" coords="134,124,317,151"/>
+<area shape="rect" href="bulk_8hpp.html" title=" " alt="" coords="315,273,394,300"/>
+<area shape="rect" title=" " alt="" coords="392,124,456,151"/>
+<area shape="rect" href="streamredirect_8hpp.html" title=" " alt="" coords="480,124,627,151"/>
+<area shape="rect" title=" " alt="" coords="37,273,115,300"/>
+<area shape="rect" title=" " alt="" coords="110,199,173,225"/>
+<area shape="rect" href="bulkprinter_8hpp.html" title=" " alt="" coords="197,199,317,225"/>
+<area shape="rect" href="consoleprinter_8hpp.html" title=" " alt="" coords="146,273,289,300"/>
+<area shape="rect" href="iprinter_8hpp.html" title=" " alt="" coords="161,348,257,375"/>
+<area shape="rect" title=" " alt="" coords="223,423,281,449"/>
+<area shape="rect" title=" " alt="" coords="333,348,395,375"/>
+<area shape="rect" title=" " alt="" coords="420,348,487,375"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a0eb3e4958f67963c36ad15b11973b2e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libs_2bulklib_2tests_2main_8cpp.html#a0eb3e4958f67963c36ad15b11973b2e6">cmdProcessingTest</a> (std::size_t commandsLimit, const std::vector&lt; std::string &gt; &amp;etalons)</td></tr>
+<tr class="separator:a0eb3e4958f67963c36ad15b11973b2e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e5389a4049a1c73f6f87c42a1492e98"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libs_2bulklib_2tests_2main_8cpp.html#a2e5389a4049a1c73f6f87c42a1492e98">TEST</a> (BulklibTest, FirstSequenceTestCase)</td></tr>
+<tr class="memdesc:a2e5389a4049a1c73f6f87c42a1492e98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка первой тестовой последовательности  <a href="libs_2bulklib_2tests_2main_8cpp.html#a2e5389a4049a1c73f6f87c42a1492e98">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2e5389a4049a1c73f6f87c42a1492e98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeda4205ddf837670a4c2ad4c6f180a19"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libs_2bulklib_2tests_2main_8cpp.html#aeda4205ddf837670a4c2ad4c6f180a19">TEST</a> (BulklibTest, SecondSequenceTestCase)</td></tr>
+<tr class="memdesc:aeda4205ddf837670a4c2ad4c6f180a19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка первой тестовой последовательности с динамическими блоками  <a href="libs_2bulklib_2tests_2main_8cpp.html#aeda4205ddf837670a4c2ad4c6f180a19">Подробнее...</a><br /></td></tr>
+<tr class="separator:aeda4205ddf837670a4c2ad4c6f180a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Функции</h2>
+<a id="a0eb3e4958f67963c36ad15b11973b2e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0eb3e4958f67963c36ad15b11973b2e6">&#9670;&nbsp;</a></span>cmdProcessingTest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cmdProcessingTest </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>commandsLimit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>etalons</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2e5389a4049a1c73f6f87c42a1492e98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e5389a4049a1c73f6f87c42a1492e98">&#9670;&nbsp;</a></span>TEST() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">BulklibTest&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FirstSequenceTestCase&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка первой тестовой последовательности </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Название</td><td>набора тестов </td></tr>
+    <tr><td class="paramname">Название</td><td>тестового примера <br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aeda4205ddf837670a4c2ad4c6f180a19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeda4205ddf837670a4c2ad4c6f180a19">&#9670;&nbsp;</a></span>TEST() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">BulklibTest&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SecondSequenceTestCase&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Проверка первой тестовой последовательности с динамическими блоками </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Название</td><td>набора тестов </td></tr>
+    <tr><td class="paramname">Название</td><td>тестового примера <br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

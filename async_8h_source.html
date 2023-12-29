@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>async_cli: Исходный файл /home/runner/work/otus-cpp-2023-06-hw09/otus-cpp-2023-06-hw09/libs/async/include/async.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">async_cli
+   &#160;<span id="projectnumber">0.0.4</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6719ab1f1f7655efc2fa43f7eb574fd1.html">libs</a></li><li class="navelem"><a class="el" href="dir_79bba60659425c9ed44771cd67b2faf5.html">async</a></li><li class="navelem"><a class="el" href="dir_a8df96e84ed94291fc7d7d9b8f9cb412.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">async.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="async_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;cinttypes&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="namespaceasync.html">    5</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceasync.html">async</a> {</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="namespaceasync.html#afb9500e3c25ed709731a0c5b9aaf74aa">    8</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="namespaceasync.html#afb9500e3c25ed709731a0c5b9aaf74aa">print_handler_t</a> = <span class="keywordtype">void</span> *;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="namespaceasync.html#afb9500e3c25ed709731a0c5b9aaf74aa">print_handler_t</a> <a class="code" href="namespaceasync.html#a1ee32403d720599ebd484613a4243951">connect</a>(std::size_t bulkLimit);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespaceasync.html#ad7f05f529706a7089d3a54baa9369a49">receive</a>(<a class="code" href="namespaceasync.html#afb9500e3c25ed709731a0c5b9aaf74aa">print_handler_t</a> <span class="keyword">const</span> handler, <span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> data, std::size_t dataSize);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="namespaceasync.html#a3687cc5bf5f4763651ee5c1db9a3d372">disconnect</a>(<a class="code" href="namespaceasync.html#afb9500e3c25ed709731a0c5b9aaf74aa">print_handler_t</a> handler);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="ttc" id="anamespaceasync_html"><div class="ttname"><a href="namespaceasync.html">async</a></div><div class="ttdef"><b>Definition:</b> async.h:5</div></div>
+<div class="ttc" id="anamespaceasync_html_a1ee32403d720599ebd484613a4243951"><div class="ttname"><a href="namespaceasync.html#a1ee32403d720599ebd484613a4243951">async::connect</a></div><div class="ttdeci">print_handler_t connect(std::size_t bulkLimit)</div><div class="ttdoc">Создаётся контекст с передачей размера блока команд</div><div class="ttdef"><b>Definition:</b> async.cpp:7</div></div>
+<div class="ttc" id="anamespaceasync_html_a3687cc5bf5f4763651ee5c1db9a3d372"><div class="ttname"><a href="namespaceasync.html#a3687cc5bf5f4763651ee5c1db9a3d372">async::disconnect</a></div><div class="ttdeci">void disconnect(print_handler_t handler)</div><div class="ttdoc">Завершение обработки команд</div><div class="ttdef"><b>Definition:</b> async.cpp:21</div></div>
+<div class="ttc" id="anamespaceasync_html_ad7f05f529706a7089d3a54baa9369a49"><div class="ttname"><a href="namespaceasync.html#ad7f05f529706a7089d3a54baa9369a49">async::receive</a></div><div class="ttdeci">void receive(print_handler_t const handler, const char *const data, std::size_t dataSize)</div><div class="ttdoc">Передача команды в рамках контекста, полученного вызовом команды connect.</div><div class="ttdef"><b>Definition:</b> async.cpp:12</div></div>
+<div class="ttc" id="anamespaceasync_html_afb9500e3c25ed709731a0c5b9aaf74aa"><div class="ttname"><a href="namespaceasync.html#afb9500e3c25ed709731a0c5b9aaf74aa">async::print_handler_t</a></div><div class="ttdeci">void * print_handler_t</div><div class="ttdoc">Тип контекста обработки команд</div><div class="ttdef"><b>Definition:</b> async.h:8</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

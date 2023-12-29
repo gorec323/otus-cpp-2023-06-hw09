@@ -1,0 +1,7 @@
+<map id="bulk_defs::BulkPrinter" name="bulk_defs::BulkPrinter">
+<area shape="rect" id="node1" title="Абстрактный класс печати блока команд" alt="" coords="227,80,392,107"/>
+<area shape="rect" id="node3" href="$classAsyncBulkPrinter.html" title=" " alt="" coords="5,155,176,181"/>
+<area shape="rect" id="node4" href="$classbulk__defs_1_1ConsoleBulkPrinter.html" title="Класс для печати блока команд в консоль" alt="" coords="201,155,418,181"/>
+<area shape="rect" id="node5" href="$classbulk__defs_1_1FileBulkPrinter.html" title="Класс файловый принтер блока команд. Выводит каждый блок команд в отдельный файл. Имя файла &#45; количес..." alt="" coords="442,155,630,181"/>
+<area shape="rect" id="node2" href="$structhw__io_1_1IPrinter.html" title="Интерфейс вывода данных" alt="" coords="252,5,367,32"/>
+</map>

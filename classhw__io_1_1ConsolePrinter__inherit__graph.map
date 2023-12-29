@@ -1,0 +1,5 @@
+<map id="hw_io::ConsolePrinter" name="hw_io::ConsolePrinter">
+<area shape="rect" id="node1" title="Базовый класс вывода строки в стандартный поток вывода" alt="" coords="33,80,195,107"/>
+<area shape="rect" id="node3" href="$classbulk__defs_1_1ConsoleBulkPrinter.html" title="Класс для печати блока команд в консоль" alt="" coords="5,155,223,181"/>
+<area shape="rect" id="node2" href="$structhw__io_1_1IPrinter.html" title="Интерфейс вывода данных" alt="" coords="57,5,171,32"/>
+</map>
